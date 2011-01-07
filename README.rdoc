@@ -1,6 +1,24 @@
 = base31_encoder
 
-Description goes here.
+This is a small class library, used to display base 10 integers as an easy to read base31 number. This was library was 
+created as part of a bigger project, where a human-readable uid was required.
+
+Requirements for the encoder:
+1. The encoded string should be easy for a human to read and memorise, if required (ie. not too long and alpha-numeric).
+2. The encoded should not randomly generate a string that would be considered profanity (hence the exclusion of all
+   vowel characters from the alpha-numeric range).
+
+Sample usage:
+
+#Convert base10 integer to base31 guid string:
+base10 = 12345
+obj = Base31encoder.new(base_length=5)
+base31 = obj.int_to_base31($base10num) # base31 = "00DV7"
+
+#Convert base31 string to base10 integer
+base31 = "00DV7"
+obj = Base31encoder.new(base_length=5)
+base10 = obj.base31str_to_int(base31) # base10 = 12345
 
 == Contributing to base31_encoder
  
