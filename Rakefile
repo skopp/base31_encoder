@@ -13,10 +13,10 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "base31_encoder"
-  gem.homepage = "http://github.com/foomip/base31_encoder"
+  gem.homepage = "http://github.com/InternetSolutions/base31_encoder"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{A ruby gem to encode/decode integers to and from base31}
+  gem.description = %Q{This is a small class library, used to display base 10 integers as an easy to read base31 number. This was library was created as part of a bigger project, where a human-readable uid was required.}
   gem.email = "nelsondcp@gmail.com"
   gem.authors = ["foomip"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
